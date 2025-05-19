@@ -34,7 +34,7 @@ wallet_address — Ethereum wallet address to analyze.
 ```
 
 
-### 3. Volume Over Time
+### 2. Volume Over Time
 **GET** /api/volume
 
 Returns total volume in USD sent from the master wallet over daily, weekly, and monthly timeframes.
@@ -58,4 +58,12 @@ Returns total volume in USD sent from the master wallet over daily, weekly, and 
 ]
 ```
 
+### 3. Update todays data
 
+**GET** /api/backfill
+
+**Response:**
+
+```json
+ {"success": "backfill done"}
+```
