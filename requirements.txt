@@ -1,0 +1,9 @@
+flask
+web3
+flask-cors
+moralis
+pandas
+requests
+supabase
+h2
+dotenv
