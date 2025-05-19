@@ -1,4 +1,4 @@
-# Cypher API
+# Cypher Backend/API
 
 Cypher is a Python-based API service that analyzes Ethereum wallet transactions and computes USD volume metrics over daily, weekly, and monthly periods. It integrates with Supabase for data storage and Alchemy for on-chain blockchain data.
 
