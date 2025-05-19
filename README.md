@@ -111,3 +111,22 @@ cypher/
     ```
 Server will run at localhost:5000
 
+
+## 🕰️ Data Backfill & Pricing Notes
+✅ Historical data has been backfilled up to May 18, 2025.
+
+🔁 To backfill data for the current date, use API # 3
+
+## 💰 Token Price Handling
+CoinGecko was used to fetch historical token prices. For tokens where CoinGecko did not have historical prices:
+
+The latest available price was used as a fallback.
+If no price was available (for obscure or low-volume tokens), the price was assumed to be 0.
+This may result in minor discrepancies in USD volume and balance calculations, but should not significantly affect aggregate values.
+
+## 🔌 API Usage Summary
+Alchemy was used to fetch all on-chain transaction data.
+Aerodome was intended for price lookups but was not used due to issues with API key acquisition and instead CoinGecko was used
+Supabase was the database used
+Render was used for deployment
+
