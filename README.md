@@ -81,4 +81,19 @@ cypher/
 ├── requirements.txt        # Python dependencies
 ```
 
+## 🛠️ Setup Instructions
+  1. Clone the Repository
+     ```
+       git clone https://github.com/KaushikSiva/cypher.git
+       cd cypher
+     ```
+  2. ```
+     pip install -r requirements.txt
+     ```
+  3. ```
+     ALCHEMY_API_KEY=your_alchemy_api_key
+     SUPABASE_URL=your_supabase_project_url
+     SUPABASE_KEY=your_supabase_service_role_key
+     ```
+
 
