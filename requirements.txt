@@ -7,3 +7,4 @@ requests
 supabase
 h2
 dotenv
+gunicorn
