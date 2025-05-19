@@ -78,7 +78,7 @@ cypher/
 ├── alchemy.py              # Fetches on-chain transactions from Alchemy
 ├── aerodome.py             # Processes wallet interactions
 ├── supabase_client.py      # Initializes Supabase connection
-├── usd_volume_analysis.py  # Computes daily/weekly/monthly USD volume
+├── usd_volume_analysis.py  # Computes and backfills daily/weekly/monthly USD volume
 ├── price_fetcher.py        # Fetches ETH/USD prices
 ├── requirements.txt        # Python dependencies
 ```
