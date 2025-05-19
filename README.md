@@ -67,3 +67,15 @@ Returns total volume in USD sent from the master wallet over daily, weekly, and 
 ```json
  {"success": "backfill done"}
 ```
+
+## 📁 Project Structure
+
+cypher/
+├── app.py                  # Main Flask app with API endpoints
+├── alchemy.py              # Fetches on-chain transactions from Alchemy (instead of aerodome)
+├── aerodome.py             # Processes wallet interactions (not used) - used alchemy instead
+├── supabase_client.py      # Initializes Supabase connection - database
+├── usd_volume_analysis.py  # Computes daily/weekly/monthly USD volume 
+├── price_fetcher.py        # Fetches ETH/USD prices
+├── requirements.txt        # Python dependencies
+
