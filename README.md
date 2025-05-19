@@ -103,4 +103,9 @@ cypher/
      MASTER_WALLET=your_wallet_id
      ```
 
+4 . run the app
+    ```
+     python app.py
+    ```
+Server will run at localhost:5000
 
