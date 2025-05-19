@@ -90,10 +90,17 @@ cypher/
   2. ```
      pip install -r requirements.txt
      ```
-  3. ```
-     ALCHEMY_API_KEY=your_alchemy_api_key
-     SUPABASE_URL=your_supabase_project_url
-     SUPABASE_KEY=your_supabase_service_role_key
+  3. setup env variables in env file
+     ```
+     ALCHEMY_API_KEY=yourkey
+     AERODOME_API_KEY=yourkey
+     COINGECKO_BASE_URL=yoururl
+     ETH_ADDRESS=eth_addr
+     WETH_ADDRESS=weth_addr
+     ETH_NORMALIZED_ADDRESS=eth_norm_addr
+     SUPABASE_URL=your_url
+     SUPABASE_KEY=your_key
+     MASTER_WALLET=your_wallet_id
      ```
 
 
