@@ -118,7 +118,7 @@ Server will run at localhost:5000
 🔁 To backfill data for the current date, use API # 3
 
 ## 💰 Token Price Handling
-CoinGecko was used to fetch historical token prices. For tokens where CoinGecko did not have historical prices:
+Aerodrome subgraph was used to fetch historical token prices. For tokens where Aerodrome did not have historical prices:
 
 The latest available price was used as a fallback.
 If no price was available (for obscure or low-volume tokens), the price was assumed to be 0.
