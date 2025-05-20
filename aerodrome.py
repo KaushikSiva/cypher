@@ -8,7 +8,6 @@ load_dotenv()
 
 API_KEY = os.getenv("THEGRAPH_API_KEY")
 SUBGRAPH_ID = os.getenv("THEGRAPH_SUBGRAPH_ID")
-TOKEN_ADDRESS_ENV = os.getenv("TOKEN_ADDRESS", "0x0b3e328455c4059eeb9e3f84b5543f74e24e7e1b")
 
 SUBGRAPH_URL = f"https://gateway.thegraph.com/api/{API_KEY}/subgraphs/id/{SUBGRAPH_ID}"
 
