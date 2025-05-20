@@ -1,6 +1,6 @@
-import price_fetcher
 from collections import defaultdict
 from datetime import datetime, timedelta, date, timezone
+import aerodrome as aerodrome
 import alchemy
 import os
 import supabase_client  # pip install python-dateutil
@@ -53,7 +53,7 @@ def get_token_price(token_address, ts_unix):
     if token_address in STABLECOINS:
         return STABLECOINS[token_address]
     else:
-        return price_fetcher.get_token_price_at(ts_unix, token_address)
+        return aerodrome.get_token_price_at(ts_unix, token_address, 150)
 
 def process_transfer(tx, index, daily_volume, weekly_volume, monthly_volume, start_ts, end_ts):
     dt, ts_unix = parse_transfer_timestamp(tx)
@@ -108,7 +108,7 @@ def process_transfer(tx, index, daily_volume, weekly_volume, monthly_volume, sta
     weekly_volume[week_start] += usd_value
     monthly_volume[month_start] += usd_value
 
-    print(f"Transfer {index}: Added USD {usd_value:.2f} to daily volume on {dt.date()}.")
+    print(f"Transfer {index}: Added USD {usd_value} to daily volume on {dt.date()}.")
     return True  # processed successfully
 
 def aggregate_usd_volume_backfill(transfers, start_ts, end_ts):

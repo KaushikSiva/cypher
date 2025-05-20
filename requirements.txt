@@ -8,3 +8,5 @@ supabase
 h2
 dotenv
 gunicorn
+gql
+requests-toolbelt
