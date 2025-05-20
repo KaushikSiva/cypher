@@ -76,10 +76,10 @@ Returns total volume in USD sent from the master wallet over daily, weekly, and 
 cypher/
 ├── app.py                  # Main Flask app with API endpoints
 ├── alchemy.py              # Fetches on-chain transactions from Alchemy
-├── aerodome.py             # Unused - coingecko was used
+├── aerodome.py             # Fetches ETH/USD prices with aerodome subgraph
 ├── supabase_client.py      # Initializes Supabase connection
 ├── usd_volume_analysis.py  # Computes and backfills daily/weekly/monthly USD volume
-├── price_fetcher.py        # Fetches ETH/USD prices with coingecko APIs
+├── coingecko.py            # Unused aerodrome was used
 ├── requirements.txt        # Python dependencies
 ```
 
